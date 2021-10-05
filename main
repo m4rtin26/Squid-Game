@@ -1,0 +1,703 @@
+#imports
+import random
+
+#player names and stats
+#player 001
+player001 = input("Input the name of player 001:")
+intel001 = int(input("How intelligent is this player from 1-10?"))
+strength001 = int(input("How strong is this player from 1-10?"))
+will001 = int(input("How determined is this player from 1-10?"))
+luck001 = random.randint(0,10)
+dead001 = False
+#player 002
+player002 = input("Input the name of player 002:")
+intel002 = int(input("How intelligent is this player from 1-10?"))
+strength002 = int(input("How strong is this player from 1-10?"))
+will002 = int(input("How determined is this player from 1-10?"))
+luck002 = random.randint(0,10)
+dead002 = False
+#player 003
+player003 = input("Input the name of player 003:")
+intel003 = int(input("How intelligent is this player from 1-10?"))
+strength003 = int(input("How strong is this player from 1-10?"))
+will003 = int(input("How determined is this player from 1-10?"))
+luck003 = random.randint(0,10)
+dead003 = False
+#player 004
+player004 = input("Input the name of player 004:")
+intel004 = int(input("How intelligent is this player from 1-10?"))
+strength004 = int(input("How strong is this player from 1-10?"))
+will004 = int(input("How determined is this player from 1-10?"))
+luck004 = random.randint(0,10)
+dead004 = False
+#player 005
+player005 = input("Input the name of player 005:")
+intel005 = int(input("How intelligent is this player from 1-10?"))
+strength005 = int(input("How strong is this player from 1-10?"))
+will005 = int(input("How determined is this player from 1-10?"))
+luck005 = random.randint(0,10)
+dead005 = False
+#player 006
+player006 = input("Input the name of player 006:")
+intel006 = int(input("How intelligent is this player from 1-10?"))
+strength006 = int(input("How strong is this player from 1-10?"))
+will006 = int(input("How determined is this player from 1-10?"))
+luck006 = random.randint(0,10)
+dead006 = False
+#player 007
+player007 = input("Input the name of player 007:")
+intel007 = int(input("How intelligent is this player from 1-10?"))
+strength007 = int(input("How strong is this player from 1-10?"))
+will007 = int(input("How determined is this player from 1-10?"))
+luck007 = random.randint(0,10)
+dead007 = False
+#player 008
+player008 = input("Input the name of player 008:")
+intel008 = int(input("How intelligent is this player from 1-10?"))
+strength008 = int(input("How strong is this player from 1-10?"))
+will008 = int(input("How determined is this player from 1-10?"))
+luck008 = random.randint(0,10)
+dead008 = False
+#player 009
+player009 = input("Input the name of player 009:")
+intel009 = int(input("How intelligent is this player from 1-10?"))
+strength009 = int(input("How strong is this player from 1-10?"))
+will009 = int(input("How determined is this player from 1-10?"))
+luck009 = random.randint(0,10)
+dead009 = False
+#player 010
+player010 = input("Input the name of player 010:")
+intel010 = int(input("How intelligent is this player from 1-10?"))
+strength010 = int(input("How strong is this player from 1-10?"))
+will010 = int(input("How determined is this player from 1-10?"))
+luck010 = random.randint(0,10)
+dead010 = False
+#playerlists
+aliveplay = [player001, player002, player003, player004, player005, player006, player007, player008, player009, player010]
+
+#game one - red light green light
+print("")
+print ("Game One: Red light, green light.")
+winningstatements = ["just about made it over the line.", "was as still as a statue and escaped the doll.", "used the player in front as a shield, very smart.", "sprinted to victory."]
+losingstatements = ["was too wobbly. The doll doesn't like jelly.", "fell on their face and was subsequently shot.", "was just far too slow.", "panicked and ran...and died."]
+#player 001
+if intel001 > 2:
+    reaction = random.randint(0,20)
+    if reaction > 4:
+        print ("Player 001 -", player001, random.choice(winningstatements))
+    else:
+        dead001 = True
+        print ("Player 001 -", player001, random.choice(losingstatements))
+        aliveplay.remove(player001)
+else:
+    dead001 = True
+    print ("Player 001 -", player001, random.choice(losingstatements))
+    aliveplay.remove(player001)
+#player 002
+if intel002 > 2:
+    reaction = random.randint(0,20)
+    if reaction > 4:
+        print ("Player 002 -", player002, random.choice(winningstatements))
+    else:
+        dead002 = True
+        print ("Player 002 -", player002, random.choice(losingstatements))
+        aliveplay.remove(player002)
+else:
+    dead002 = True
+    print ("Player 002 -", player002, random.choice(losingstatements))
+    aliveplay.remove(player002)
+#player 003
+if intel003 > 2:
+    reaction = random.randint(0,20)
+    if reaction > 4:
+        print ("Player 003 -", player003, random.choice(winningstatements))
+    else:
+        dead003 = True
+        print ("Player 003 -", player003, random.choice(losingstatements))
+        aliveplay.remove(player003)
+else:
+    dead003 = True
+    print ("Player 003 -", player003, random.choice(losingstatements))
+    aliveplay.remove(player003)
+#player 004
+if intel004 > 2:
+    reaction = random.randint(0,20)
+    if reaction > 4:
+        print ("Player 004 -", player004, random.choice(winningstatements))
+    else:
+        dead004 = True
+        print ("Player 004 -", player004, random.choice(losingstatements))
+        aliveplay.remove(player004)
+else:
+    dead004 = True
+    print ("Player 004 -", player004, random.choice(losingstatements))
+    aliveplay.remove(player004)
+#player 005
+if intel005 > 2:
+    reaction = random.randint(0,20)
+    if reaction > 4:
+        print ("Player 005 -", player005, random.choice(winningstatements))
+    else:
+        dead005 = True
+        print ("Player 005 -", player005, random.choice(losingstatements))
+        aliveplay.remove(player005)
+else:
+    dead005 = True
+    print ("Player 005 -", player005, random.choice(losingstatements))
+    aliveplay.remove(player005)
+#player 006
+if intel006 > 2:
+    reaction = random.randint(0,20)
+    if reaction > 4:
+        print ("Player 006 -", player006, random.choice(winningstatements))
+    else:
+        dead006 = True
+        print ("Player 006 -", player006, random.choice(losingstatements))
+        aliveplay.remove(player006)
+else:
+    dead006 = True
+    print ("Player 006 -", player006, random.choice(losingstatements))
+    aliveplay.remove(player006)
+#player 007
+if intel007 > 2:
+    reaction = random.randint(0,20)
+    if reaction > 4:
+        print ("Player 007 -", player007, random.choice(winningstatements))
+    else:
+        dead007 = True
+        print ("Player 007 -", player007, random.choice(losingstatements))
+        aliveplay.remove(player007)
+else:
+    dead007 = True
+    print ("Player 007 -", player007, random.choice(losingstatements))
+    aliveplay.remove(player007)
+#player 008
+if intel008 > 2:
+    reaction = random.randint(0,20)
+    if reaction > 4:
+        print ("Player 008 -", player008, random.choice(winningstatements))
+    else:
+        dead008 = True
+        print ("Player 008 -", player008, random.choice(losingstatements))
+        aliveplay.remove(player008)
+else:
+    dead008 = True
+    print ("Player 008 -", player008, random.choice(losingstatements))
+    aliveplay.remove(player008)
+#player 009
+if intel009 > 2:
+    reaction = random.randint(0,20)
+    if reaction > 4:
+        print ("Player 009 -", player009, random.choice(winningstatements))
+    else:
+        dead009 = True
+        print ("Player 009 -", player009, random.choice(losingstatements))
+        aliveplay.remove(player009)
+else:
+    dead009 = True
+    print ("Player 009 -", player009, random.choice(losingstatements))
+    aliveplay.remove(player009)
+#player 010
+if intel010 > 2:
+    reaction = random.randint(0,20)
+    if reaction > 4:
+        print ("Player 010 -", player010, random.choice(winningstatements))
+    else:
+        dead010 = True
+        print ("Player 010 -", player010, random.choice(losingstatements))
+        aliveplay.remove(player010)
+else:
+    dead010 = True
+    print ("Player 010 -", player010, random.choice(losingstatements))
+    aliveplay.remove(player010)
+    
+#game two - honeycomb
+print ("")
+contin = input("Enter any key to continue:")
+print ("")
+print ("Game Two: Honeycomb.")
+winningstatements = ["was smart enough to figure it out...but did they tell their friends?", "used a lighter to win - sneaky bitch", "was tipped off by a friend and it payed off.", "has a sharp eye and a steady hand! Win!", "is a lucky bastard and got a triangle - win."]
+losingstatements = ["has a shaky hand...oh well.", "got an umbrella. RIP.", "tried to use a lighter but got caught. Buh-bye.", "snapped their honeycomb.", "just ate their honeycomb. Dumbass."]
+#player001
+if dead001 == False:
+    shape = random.randint(0,20)
+    if shape > 6 or intel001 > 8:
+        print ("Player 001 -", player001, random.choice(winningstatements))
+    else:
+        dead001 = True
+        print ("Player 001 -", player001, random.choice(losingstatements))
+        aliveplay.remove(player001)
+#player002
+if dead002 == False:
+    shape = random.randint(0,20)
+    if shape > 6 or intel002 > 8:
+        print ("Player 002 -", player002, random.choice(winningstatements))
+    else:
+        dead002 = True
+        print ("Player 002 -", player002, random.choice(losingstatements))
+        aliveplay.remove(player002)
+#player003
+if dead003 == False:
+    shape = random.randint(0,20)
+    if shape > 6 or intel003 > 8:
+        print ("Player 003 -", player003, random.choice(winningstatements))
+    else:
+        dead003 = True
+        print ("Player 003 -", player003, random.choice(losingstatements))
+        aliveplay.remove(player003)
+#player004
+if dead004 == False:
+    shape = random.randint(0,20)
+    if shape > 6 or intel004 > 8:
+        print ("Player 004 -", player004, random.choice(winningstatements))
+    else:
+        dead004 = True
+        print ("Player 004 -", player004, random.choice(losingstatements))
+        aliveplay.remove(player004)
+#player005
+if dead005 == False:
+    shape = random.randint(0,20)
+    if shape > 6 or intel005 > 8:
+        print ("Player 005 -", player005, random.choice(winningstatements))
+    else:
+        dead005 = True
+        print ("Player 005 -", player005, random.choice(losingstatements))
+        aliveplay.remove(player005)
+#player006
+if dead006 == False:
+    shape = random.randint(0,20)
+    if shape > 6 or intel006 > 8:
+        print ("Player 006 -", player006, random.choice(winningstatements))
+    else:
+        dead006 = True
+        print ("Player 006 -", player006, random.choice(losingstatements))
+        aliveplay.remove(player006)
+#player007
+if dead007 == False:
+    shape = random.randint(0,20)
+    if shape > 6 or intel007 > 8:
+        print ("Player 007 -", player007, random.choice(winningstatements))
+    else:
+        dead007 = True
+        print ("Player 007 -", player007, random.choice(losingstatements))
+        aliveplay.remove(player007)
+#player008
+if dead008 == False:
+    shape = random.randint(0,20)
+    if shape > 6 or intel008 > 8:
+        print ("Player 008 -", player008, random.choice(winningstatements))
+    else:
+        dead008 = True
+        print ("Player 008 -", player008, random.choice(losingstatements))
+        aliveplay.remove(player008)
+#player009
+if dead009 == False:
+    shape = random.randint(0,20)
+    if shape > 6 or intel009 > 8:
+        print ("Player 009 -", player009, random.choice(winningstatements))
+    else:
+        dead009 = True
+        print ("Player 009 -", player009, random.choice(losingstatements))
+        aliveplay.remove(player009)
+#player010
+if dead010 == False:
+    shape = random.randint(0,20)
+    if shape > 6 or intel010 > 8:
+        print ("Player 010 -", player010, random.choice(winningstatements))
+    else:
+        dead010 = True
+        print ("Player 010 -", player010, random.choice(losingstatements))
+        aliveplay.remove(player010)
+#death check
+if (dead001 == True) and (dead002 == True) and (dead003 == True) and (dead004 == True) and (dead005 == True) and (dead006 == True) and (dead007 == True) and (dead008 == True) and (dead009 == True) and (dead010 == True):
+    print ("All of your teammates are dead.")
+    
+#game three - tug of war
+print ("")
+contin = input("Enter any key to continue:")
+print ("")
+print ("Game Three: Tug of War.")
+winningstatements = ["had a mastermind on their team and used brainpower to win.", "used their pure brawn to win.", "rolled a nat20 on a strength check.", "just about clung in there."]
+losingstatements = ["fell to their death.", "was shot while dangling.", "was simply far too weak...you let your team down.", "tripped and ruined it for everyone."]
+#player001
+if dead001 == False:
+    team = random.randint(0,20)
+    if team > 7 or strength001 > 7:
+        print ("Player 001 -", player001, random.choice(winningstatements))
+    else:
+        dead001 = True
+        print ("Player 001 -", player001, random.choice(losingstatements))
+        aliveplay.remove(player001)
+#player002
+if dead002 == False:
+    team = random.randint(0,20)
+    if team > 7 or strength002 > 7:
+        print ("Player 002 -", player002, random.choice(winningstatements))
+    else:
+        dead002 = True
+        print ("Player 002 -", player002, random.choice(losingstatements))
+        aliveplay.remove(player002)
+#player003
+if dead003 == False:
+    team = random.randint(0,20)
+    if team > 7 or strength003 > 7:
+        print ("Player 003 -", player003, random.choice(winningstatements))
+    else:
+        dead003 = True
+        print ("Player 003 -", player003, random.choice(losingstatements))
+        aliveplay.remove(player003)
+#player004
+if dead004 == False:
+    team = random.randint(0,20)
+    if team > 7 or strength004 > 7:
+        print ("Player 004 -", player004, random.choice(winningstatements))
+    else:
+        dead004 = True
+        print ("Player 004 -", player004, random.choice(losingstatements))
+        aliveplay.remove(player004)
+#player005
+if dead005 == False:
+    team = random.randint(0,20)
+    if team > 7 or strength005 > 7:
+        print ("Player 005 -", player005, random.choice(winningstatements))
+    else:
+        dead005 = True
+        print ("Player 005 -", player005, random.choice(losingstatements))
+        aliveplay.remove(player005)
+#player006
+if dead006 == False:
+    team = random.randint(0,20)
+    if team > 7 or strength006 > 7:
+        print ("Player 006 -", player006, random.choice(winningstatements))
+    else:
+        dead006 = True
+        print ("Player 006 -", player006, random.choice(losingstatements))
+        aliveplay.remove(player006)
+#player007
+if dead007 == False:
+    team = random.randint(0,20)
+    if team > 7 or strength007 > 7:
+        print ("Player 007 -", player007, random.choice(winningstatements))
+    else:
+        dead007 = True
+        print ("Player 007 -", player007, random.choice(losingstatements))
+        aliveplay.remove(player007)
+#player008
+if dead008 == False:
+    team = random.randint(0,20)
+    if team > 7 or strength008 > 7:
+        print ("Player 008 -", player008, random.choice(winningstatements))
+    else:
+        dead008 = True
+        print ("Player 008 -", player008, random.choice(losingstatements))
+        aliveplay.remove(player008)
+#player009
+if dead009 == False:
+    team = random.randint(0,20)
+    if team > 7 or strength009 > 7:
+        print ("Player 009 -", player009, random.choice(winningstatements))
+    else:
+        dead009 = True
+        print ("Player 009 -", player009, random.choice(losingstatements))
+        aliveplay.remove(player009)
+#player010
+if dead010 == False:
+    team = random.randint(0,20)
+    if team > 7 or strength010 > 7:
+        print ("Player 010 -", player010, random.choice(winningstatements))
+    else:
+        dead010 = True
+        print ("Player 010 -", player010, random.choice(losingstatements))
+        aliveplay.remove(player010)
+#death check       
+if (dead001 == True) and (dead002 == True) and (dead003 == True) and (dead004 == True) and (dead005 == True) and (dead006 == True) and (dead007 == True) and (dead008 == True) and (dead009 == True) and (dead010 == True):
+    print ("All of your teammates are dead.")
+        
+#game four - marbles
+print ("")
+contin = input("Enter any key to continue:")
+print ("")
+print ("Game Four: Marbles.")
+winningstatements = ["won fair and square. Classic game of luck.", "had a partner sacrafice themselves for them.", "managed to throw the marble the furthest."]
+losingstatements = ["lost this game of luck...oh no.", "had their marbles stolen from them."]
+#player001
+if dead001 == False:
+    luck = random.randint(0,20)
+    if will001 > 3:
+        if intel001 > 7 or luck > 9:
+            print ("Player 001 -", player001, random.choice(winningstatements))
+        else:
+            dead001 = True
+            print ("Player 001 -", player001, random.choice(losingstatements))
+            aliveplay.remove(player001)
+    else:
+        print ("Player 001 -", player001, "sacraficed themselves for their partner. How noble.")
+        dead001 = True
+        aliveplay.remove(player001)
+#player002
+if dead002 == False:
+    luck = random.randint(0,20)
+    if will002 > 3:
+        if intel002 > 7 or luck > 9:
+            print ("Player 002 -", player002, random.choice(winningstatements))
+        else:
+            dead002 = True
+            print ("Player 002 -", player002, random.choice(losingstatements))
+            aliveplay.remove(player002)
+    else:
+        print ("Player 002 -", player002, "sacraficed themselves for their partner. How noble.")
+        dead002 = True
+        aliveplay.remove(player002)
+#player003
+if dead003 == False:
+    luck = random.randint(0,20)
+    if will003 > 3:
+        if intel003 > 7 or luck > 9:
+            print ("Player 003 -", player003, random.choice(winningstatements))
+        else:
+            dead003 = True
+            print ("Player 003 -", player003, random.choice(losingstatements))
+            aliveplay.remove(player003)
+    else:
+        print ("Player 003 -", player003, "sacraficed themselves for their partner. How noble.")
+        dead003 = True
+        aliveplay.remove(player003)
+#player004
+if dead004 == False:
+    luck = random.randint(0,20)
+    if will004 > 3:
+        if intel004 > 7 or luck > 9:
+            print ("Player 004 -", player004, random.choice(winningstatements))
+        else:
+            dead004 = True
+            print ("Player 004 -", player004, random.choice(losingstatements))
+            aliveplay.remove(player004)
+    else:
+        print ("Player 004 -", player004, "sacraficed themselves for their partner. How noble.")
+        dead004 = True
+        aliveplay.remove(player004)
+#player005
+if dead005 == False:
+    luck = random.randint(0,20)
+    if will005 > 3:
+        if intel005 > 7 or luck > 9:
+            print ("Player 005 -", player005, random.choice(winningstatements))
+        else:
+            dead005 = True
+            print ("Player 005 -", player005, random.choice(losingstatements))
+            aliveplay.remove(player005)
+    else:
+        print ("Player 005 -", player005, "sacraficed themselves for their partner. How noble.")
+        dead005 = True
+        aliveplay.remove(player005)
+#player006
+if dead006 == False:
+    luck = random.randint(0,20)
+    if will006 > 3:
+        if intel006 > 7 or luck > 9:
+            print ("Player 006 -", player006, random.choice(winningstatements))
+        else:
+            dead006 = True
+            print ("Player 006 -", player006, random.choice(losingstatements))
+            aliveplay.remove(player006)
+    else:
+        print ("Player 006 -", player006, "sacraficed themselves for their partner. How noble.")
+        dead006 = True
+        aliveplay.remove(player006)
+#player007
+if dead007 == False:
+    luck = random.randint(0,20)
+    if will007 > 3:
+        if intel007 > 7 or luck > 9:
+            print ("Player 007 -", player007, random.choice(winningstatements))
+        else:
+            dead007 = True
+            print ("Player 007 -", player007, random.choice(losingstatements))
+            aliveplay.remove(player007)
+    else:
+        print ("Player 007 -", player007, "sacraficed themselves for their partner. How noble.")
+        dead007 = True
+        aliveplay.remove(player007)
+#player008
+if dead008 == False:
+    luck = random.randint(0,20)
+    if will008 > 3:
+        if intel008 > 7 or luck > 9:
+            print ("Player 008 -", player008, random.choice(winningstatements))
+        else:
+            dead008 = True
+            print ("Player 008 -", player008, random.choice(losingstatements))
+            aliveplay.remove(player008)
+    else:
+        print ("Player 008 -", player008, "sacraficed themselves for their partner. How noble.")
+        dead008 = True
+        aliveplay.remove(player008)
+#player009
+if dead009 == False:
+    luck = random.randint(0,20)
+    if will009 > 3:
+        if intel009 > 7 or luck > 9:
+            print ("Player 009 -", player009, random.choice(winningstatements))
+        else:
+            dead009 = True
+            print ("Player 009 -", player009, random.choice(losingstatements))
+            aliveplay.remove(player009)
+    else:
+        print ("Player 009 -", player009, "sacraficed themselves for their partner. How noble.")
+        dead009 = True
+        aliveplay.remove(player009)
+#player010
+if dead010 == False:
+    luck = random.randint(0,20)
+    if will010 > 3:
+        if intel010 > 7 or luck > 9:
+            print ("Player 010 -", player010, random.choice(winningstatements))
+        else:
+            dead010 = True
+            print ("Player 010 -", player010, random.choice(losingstatements))
+            aliveplay.remove(player010)
+    else:
+        print ("Player 010 -", player010, "sacraficed themselves for their partner. How noble.")
+        dead010 = True
+        aliveplay.remove(player010)
+#death check       
+if (dead001 == True) and (dead002 == True) and (dead003 == True) and (dead004 == True) and (dead005 == True) and (dead006 == True) and (dead007 == True) and (dead008 == True) and (dead009 == True) and (dead010 == True):
+    print ("All of your teammates are dead.")
+    
+#game five - glass floors
+print ("")
+contin = input("Enter any key to continue:")
+print ("")
+print ("Game Five: Glass Floors.")
+winningstatements = ["was lucky...0.00000381469% chance kind of lucky.", "watched everyone fall to their death, but made it through.", "pushed someone on their way to victory."]
+losingstatements = ["chose an early number, stupid mistake.", "went crashing through the glass.", "chose the wrong type of glass."]
+#player001
+if dead001 == False:
+    luck = random.randint(0,5)
+    if intel001 > 8 or luck > 2:
+        print ("Player 001 -", player001, random.choice(winningstatements))
+    else:
+        print ("Player 001 -", player001, random.choice(losingstatements))
+        dead001 = True
+        aliveplay.remove(player001)
+#player002
+if dead002 == False:
+    luck = random.randint(0,5)
+    if intel002 > 8 or luck > 2:
+        print ("Player 002 -", player002, random.choice(winningstatements))
+    else:
+        print ("Player 002 -", player002, random.choice(losingstatements))
+        dead002 = True
+        aliveplay.remove(player002)
+#player003
+if dead003 == False:
+    luck = random.randint(0,5)
+    if intel003 > 8 or luck > 2:
+        print ("Player 003 -", player003, random.choice(winningstatements))
+    else:
+        print ("Player 003 -", player003, random.choice(losingstatements))
+        dead003 = True
+        aliveplay.remove(player003)
+#player004
+if dead004 == False:
+    luck = random.randint(0,5)
+    if intel004 > 8 or luck > 2:
+        print ("Player 004 -", player004, random.choice(winningstatements))
+    else:
+        print ("Player 004 -", player004, random.choice(losingstatements))
+        dead004 = True
+        aliveplay.remove(player004)
+#player005
+if dead005 == False:
+    luck = random.randint(0,5)
+    if intel005 > 8 or luck > 2:
+        print ("Player 005 -", player005, random.choice(winningstatements))
+    else:
+        print ("Player 005 -", player005, random.choice(losingstatements))
+        dead005 = True
+        aliveplay.remove(player005)
+#player006
+if dead006 == False:
+    luck = random.randint(0,5)
+    if intel006 > 8 or luck > 2:
+        print ("Player 006 -", player006, random.choice(winningstatements))
+    else:
+        print ("Player 006 -", player006, random.choice(losingstatements))
+        dead006 = True
+        aliveplay.remove(player006)
+#player007
+if dead007 == False:
+    luck = random.randint(0,5)
+    if intel007 > 8 or luck > 2:
+        print ("Player 007 -", player007, random.choice(winningstatements))
+    else:
+        print ("Player 007 -", player007, random.choice(losingstatements))
+        dead007 = True
+        aliveplay.remove(player007)
+#player008
+if dead008 == False:
+    luck = random.randint(0,5)
+    if intel008 > 8 or luck > 2:
+        print ("Player 008 -", player008, random.choice(winningstatements))
+    else:
+        print ("Player 008 -", player008, random.choice(losingstatements))
+        dead008 = True
+        aliveplay.remove(player008)
+#player009
+if dead009 == False:
+    luck = random.randint(0,5)
+    if intel009 > 8 or luck > 2:
+        print ("Player 009 -", player009, random.choice(winningstatements))
+    else:
+        print ("Player 009 -", player009, random.choice(losingstatements))
+        dead009 = True
+        aliveplay.remove(player009)
+#player010
+if dead010 == False:
+    luck = random.randint(0,5)
+    if intel010 > 8 or luck > 2:
+        print ("Player 010 -", player010, random.choice(winningstatements))
+    else:
+        print ("Player 010 -", player010, random.choice(losingstatements))
+        dead010 = True
+        aliveplay.remove(player010)
+#death check       
+if (dead001 == True) and (dead002 == True) and (dead003 == True) and (dead004 == True) and (dead005 == True) and (dead006 == True) and (dead007 == True) and (dead008 == True) and (dead009 == True) and (dead010 == True):
+    print ("All of your teammates are dead.")
+    
+#in-between
+print ("")
+contin = input("Enter any key to continue:")
+print ("")
+if len(aliveplay) < 3:
+    if len(aliveplay) == 0:
+        print ("Game over")
+    elif len(aliveplay) == 1:
+        player1 = aliveplay[0]
+        player2 = random.randint(11,456)
+        print ("Everyone slept soundly that night.")
+    elif len(aliveplay) == 2:
+        player1 = aliveplay[0]
+        player2 = aliveplay[1]
+        print ("Everyone slept soundly that night.")
+else:
+    while len(aliveplay) > 2:
+        unfortunate = random.choice(aliveplay)
+        aliveplay.remove(unfortunate)
+        print ("During a scuffle, while asleep,", unfortunate, "was stabbed.")
+    player1 = aliveplay[0]
+    player2 = aliveplay[1]
+    
+#game six - squid game
+print ("")
+contin = input("Enter any key to continue:")
+print ("")
+print ("Game Six: Squid Game.")
+player1win = random.randint(0,100)
+player2win = random.randint(0,100)
+if player1win > player2win:
+    print ("The winner of the games, and $38 million, is", player1)
+elif player2win > player1win:
+    print ("The winner of the games, and $38 million, is", player2)
+else:
+    print ("There are no real winners in capitalism.")
